@@ -1,0 +1,9 @@
+{
+  "Log": {
+    "DirLog": "C:/TMP/ApiRestCarritoPi/Log/",
+    "LogErr": "ApiRestCarritoPiErr",
+    "LogInOut": "ApiRestCarritoPiInOut",
+    "DirAlt": "C:/TMP/ApiRestCarritoPi/",
+    "AltLog": "ApiRestCarritoPiAlt"
+  }
+}

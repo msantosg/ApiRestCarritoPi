@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_preventa_superModelStoreContainer" CdmEntityContainer="db_preventa_superEntities">
+    <EntitySetMapping Name="carrito">
+      <EntityTypeMapping TypeName="db_preventa_superModel.carrito">
+        <MappingFragment StoreEntitySet="carrito">
+          <ScalarProperty Name="car_cod_carro" ColumnName="car_cod_carro" />
+          <ScalarProperty Name="car_tipo_carro" ColumnName="car_tipo_carro" />
+          <ScalarProperty Name="car_user_crea" ColumnName="car_user_crea" />
+          <ScalarProperty Name="car_fecha_crea" ColumnName="car_fecha_crea" />
+          <ScalarProperty Name="car_user_mod" ColumnName="car_user_mod" />
+          <ScalarProperty Name="car_fecha_mod" ColumnName="car_fecha_mod" />
+          <ScalarProperty Name="car_estado_carro" ColumnName="car_estado_carro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cliente">
+      <EntityTypeMapping TypeName="db_preventa_superModel.cliente">
+        <MappingFragment StoreEntitySet="cliente">
+          <ScalarProperty Name="cli_nit_cliente" ColumnName="cli_nit_cliente" />
+          <ScalarProperty Name="cli_nombre_cliente" ColumnName="cli_nombre_cliente" />
+          <ScalarProperty Name="cli_direccion_cliente" ColumnName="cli_direccion_cliente" />
+          <ScalarProperty Name="cli_fecha_crea" ColumnName="cli_fecha_crea" />
+          <ScalarProperty Name="cli_fecha_mod" ColumnName="cli_fecha_mod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detalle_preventa">
+      <EntityTypeMapping TypeName="db_preventa_superModel.detalle_preventa">
+        <MappingFragment StoreEntitySet="detalle_preventa">
+          <ScalarProperty Name="dep_cod_dte_preventa" ColumnName="dep_cod_dte_preventa" />
+          <ScalarProperty Name="pre_cod_preventa" ColumnName="pre_cod_preventa" />
+          <ScalarProperty Name="pro_correlativo" ColumnName="pro_correlativo" />
+          <ScalarProperty Name="dep_cantidad_venta" ColumnName="dep_cantidad_venta" />
+          <ScalarProperty Name="dep_precio_venta" ColumnName="dep_precio_venta" />
+          <ScalarProperty Name="dep_descuento_prod" ColumnName="dep_descuento_prod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="preventa">
+      <EntityTypeMapping TypeName="db_preventa_superModel.preventa">
+        <MappingFragment StoreEntitySet="preventa">
+          <ScalarProperty Name="pre_cod_preventa" ColumnName="pre_cod_preventa" />
+          <ScalarProperty Name="cli_nit_cliente" ColumnName="cli_nit_cliente" />
+          <ScalarProperty Name="car_cod_carro" ColumnName="car_cod_carro" />
+          <ScalarProperty Name="pre_fecha_venta" ColumnName="pre_fecha_venta" />
+          <ScalarProperty Name="pre_precio_total" ColumnName="pre_precio_total" />
+          <ScalarProperty Name="pre_estado_venta" ColumnName="pre_estado_venta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="producto">
+      <EntityTypeMapping TypeName="db_preventa_superModel.producto">
+        <MappingFragment StoreEntitySet="producto">
+          <ScalarProperty Name="pro_correlativo" ColumnName="pro_correlativo" />
+          <ScalarProperty Name="pro_nombre" ColumnName="pro_nombre" />
+          <ScalarProperty Name="pro_descripcion" ColumnName="pro_descripcion" />
+          <ScalarProperty Name="pro_stock" ColumnName="pro_stock" />
+          <ScalarProperty Name="pro_tipo_paquete" ColumnName="pro_tipo_paquete" />
+          <ScalarProperty Name="pro_peso" ColumnName="pro_peso" />
+          <ScalarProperty Name="pro_precio_venta" ColumnName="pro_precio_venta" />
+          <ScalarProperty Name="pro_precio_compra" ColumnName="pro_precio_compra" />
+          <ScalarProperty Name="pro_descuento_prod" ColumnName="pro_descuento_prod" />
+          <ScalarProperty Name="pro_user_crea" ColumnName="pro_user_crea" />
+          <ScalarProperty Name="pro_fecha_crea" ColumnName="pro_fecha_crea" />
+          <ScalarProperty Name="pro_user_mod" ColumnName="pro_user_mod" />
+          <ScalarProperty Name="pro_fecha_mod" ColumnName="pro_fecha_mod" />
+          <ScalarProperty Name="pro_estado" ColumnName="pro_estado" />
+          <ScalarProperty Name="pro_image_producto" ColumnName="pro_image_producto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nps">
+      <EntityTypeMapping TypeName="db_preventa_superModel.nps">
+        <MappingFragment StoreEntitySet="nps">
+          <ScalarProperty Name="estadoNps" ColumnName="estadoNps" />
+          <ScalarProperty Name="fechaNps" ColumnName="fechaNps" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="ScorePregunta" ColumnName="ScorePregunta" />
+          <ScalarProperty Name="idNps" ColumnName="idNps" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

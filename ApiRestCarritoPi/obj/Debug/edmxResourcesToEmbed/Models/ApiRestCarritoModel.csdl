@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_preventa_superModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="carrito">
+    <Key>
+      <PropertyRef Name="car_cod_carro" />
+    </Key>
+    <Property Name="car_cod_carro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="car_tipo_carro" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="car_user_crea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="car_fecha_crea" Type="DateTime" Precision="0" />
+    <Property Name="car_user_mod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="car_fecha_mod" Type="DateTime" Precision="0" />
+    <Property Name="car_estado_carro" Type="Int32" />
+    <NavigationProperty Name="preventa" Relationship="Self.fk_preventa_carrito" FromRole="carrito" ToRole="preventa" />
+  </EntityType>
+  <EntityType Name="cliente">
+    <Key>
+      <PropertyRef Name="cli_nit_cliente" />
+    </Key>
+    <Property Name="cli_nit_cliente" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cli_nombre_cliente" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="cli_direccion_cliente" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cli_fecha_crea" Type="DateTime" Precision="0" />
+    <Property Name="cli_fecha_mod" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="preventa" Relationship="Self.fk_preventa_cliente" FromRole="cliente" ToRole="preventa" />
+  </EntityType>
+  <EntityType Name="detalle_preventa">
+    <Key>
+      <PropertyRef Name="dep_cod_dte_preventa" />
+      <PropertyRef Name="pre_cod_preventa" />
+    </Key>
+    <Property Name="dep_cod_dte_preventa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pre_cod_preventa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pro_correlativo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="dep_cantidad_venta" Type="Int32" />
+    <Property Name="dep_precio_venta" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="dep_descuento_prod" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="preventa" Relationship="Self.fk_detalle_preventa_1" FromRole="detalle_preventa" ToRole="preventa" />
+    <NavigationProperty Name="producto" Relationship="Self.fk_detalle_producto" FromRole="detalle_preventa" ToRole="producto" />
+  </EntityType>
+  <EntityType Name="nps">
+    <Key>
+      <PropertyRef Name="idNps" />
+    </Key>
+    <Property Name="idNps" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ScorePregunta" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Comentario" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="fechaNps" Type="DateTime" Precision="0" />
+    <Property Name="estadoNps" Type="Int32" />
+  </EntityType>
+  <EntityType Name="preventa">
+    <Key>
+      <PropertyRef Name="pre_cod_preventa" />
+    </Key>
+    <Property Name="pre_cod_preventa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cli_nit_cliente" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="car_cod_carro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pre_fecha_venta" Type="DateTime" Precision="0" />
+    <Property Name="pre_precio_total" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="pre_estado_venta" Type="Int32" />
+    <NavigationProperty Name="carrito" Relationship="Self.fk_preventa_carrito" FromRole="preventa" ToRole="carrito" />
+    <NavigationProperty Name="cliente" Relationship="Self.fk_preventa_cliente" FromRole="preventa" ToRole="cliente" />
+    <NavigationProperty Name="detalle_preventa" Relationship="Self.fk_detalle_preventa_1" FromRole="preventa" ToRole="detalle_preventa" />
+  </EntityType>
+  <EntityType Name="producto">
+    <Key>
+      <PropertyRef Name="pro_correlativo" />
+    </Key>
+    <Property Name="pro_correlativo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pro_nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="true" />
+    <Property Name="pro_descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="pro_stock" Type="Int32" />
+    <Property Name="pro_tipo_paquete" Type="String" MaxLength="35" FixedLength="false" Unicode="true" />
+    <Property Name="pro_peso" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="pro_precio_venta" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="pro_precio_compra" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="pro_descuento_prod" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="pro_user_crea" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pro_fecha_crea" Type="DateTime" Precision="0" />
+    <Property Name="pro_user_mod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pro_fecha_mod" Type="DateTime" Precision="0" />
+    <Property Name="pro_estado" Type="Int32" />
+    <Property Name="pro_image_producto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="detalle_preventa" Relationship="Self.fk_detalle_producto" FromRole="producto" ToRole="detalle_preventa" />
+  </EntityType>
+  <Association Name="fk_preventa_carrito">
+    <End Role="carrito" Type="Self.carrito" Multiplicity="0..1" />
+    <End Role="preventa" Type="Self.preventa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="carrito">
+        <PropertyRef Name="car_cod_carro" />
+      </Principal>
+      <Dependent Role="preventa">
+        <PropertyRef Name="car_cod_carro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_preventa_cliente">
+    <End Role="cliente" Type="Self.cliente" Multiplicity="0..1" />
+    <End Role="preventa" Type="Self.preventa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="cli_nit_cliente" />
+      </Principal>
+      <Dependent Role="preventa">
+        <PropertyRef Name="cli_nit_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_detalle_preventa_1">
+    <End Role="preventa" Type="Self.preventa" Multiplicity="1" />
+    <End Role="detalle_preventa" Type="Self.detalle_preventa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="preventa">
+        <PropertyRef Name="pre_cod_preventa" />
+      </Principal>
+      <Dependent Role="detalle_preventa">
+        <PropertyRef Name="pre_cod_preventa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_detalle_producto">
+    <End Role="producto" Type="Self.producto" Multiplicity="0..1" />
+    <End Role="detalle_preventa" Type="Self.detalle_preventa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="producto">
+        <PropertyRef Name="pro_correlativo" />
+      </Principal>
+      <Dependent Role="detalle_preventa">
+        <PropertyRef Name="pro_correlativo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_preventa_superEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="carrito" EntityType="Self.carrito" />
+    <EntitySet Name="cliente" EntityType="Self.cliente" />
+    <EntitySet Name="detalle_preventa" EntityType="Self.detalle_preventa" />
+    <EntitySet Name="nps" EntityType="Self.nps" />
+    <EntitySet Name="preventa" EntityType="Self.preventa" />
+    <EntitySet Name="producto" EntityType="Self.producto" />
+    <AssociationSet Name="fk_preventa_carrito" Association="Self.fk_preventa_carrito">
+      <End Role="carrito" EntitySet="carrito" />
+      <End Role="preventa" EntitySet="preventa" />
+    </AssociationSet>
+    <AssociationSet Name="fk_preventa_cliente" Association="Self.fk_preventa_cliente">
+      <End Role="cliente" EntitySet="cliente" />
+      <End Role="preventa" EntitySet="preventa" />
+    </AssociationSet>
+    <AssociationSet Name="fk_detalle_preventa_1" Association="Self.fk_detalle_preventa_1">
+      <End Role="preventa" EntitySet="preventa" />
+      <End Role="detalle_preventa" EntitySet="detalle_preventa" />
+    </AssociationSet>
+    <AssociationSet Name="fk_detalle_producto" Association="Self.fk_detalle_producto">
+      <End Role="producto" EntitySet="producto" />
+      <End Role="detalle_preventa" EntitySet="detalle_preventa" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

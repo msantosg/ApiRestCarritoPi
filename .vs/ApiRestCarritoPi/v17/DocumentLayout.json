@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\proyectos\\.net\\ApiRestCarritoPi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|c:\\proyectos\\.net\\apirestcarritopi\\apirestcarritopi\\models\\apirestcarritomodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|solutionrelative:apirestcarritopi\\models\\apirestcarritomodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|c:\\proyectos\\.net\\apirestcarritopi\\apirestcarritopi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|solutionrelative:apirestcarritopi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|C:\\proyectos\\.net\\ApiRestCarritoPi\\apirestcarritopi\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|solutionrelative:apirestcarritopi\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|C:\\proyectos\\.net\\ApiRestCarritoPi\\apirestcarritopi\\controllers\\transaccarritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|solutionrelative:apirestcarritopi\\controllers\\transaccarritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|c:\\proyectos\\.net\\apirestcarritopi\\apirestcarritopi\\app_code\\clslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|solutionrelative:apirestcarritopi\\app_code\\clslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|C:\\proyectos\\.net\\ApiRestCarritoPi\\apirestcarritopi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A68EA1-B5F5-4644-97F8-E5D73598F8DB}|ApiRestCarritoPi\\ApiRestCarritoPi.csproj|solutionrelative:apirestcarritopi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiRestCarritoModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\Models\\ApiRestCarritoModel.edmx",
+              "RelativeDocumentMoniker": "ApiRestCarritoPi\\Models\\ApiRestCarritoModel.edmx",
+              "ToolTip": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\Models\\ApiRestCarritoModel.edmx [Diagram1]",
+              "RelativeToolTip": "ApiRestCarritoPi\\Models\\ApiRestCarritoModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-09-14T17:34:49.381Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ApiRestCarritoPi\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ApiRestCarritoPi\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T17:30:51.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "ApiRestCarritoPi\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "ApiRestCarritoPi\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-25T18:55:20.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "clsLog.cs",
+              "DocumentMoniker": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\App_Code\\clsLog.cs",
+              "RelativeDocumentMoniker": "ApiRestCarritoPi\\App_Code\\clsLog.cs",
+              "ToolTip": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\App_Code\\clsLog.cs",
+              "RelativeToolTip": "ApiRestCarritoPi\\App_Code\\clsLog.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAqwEIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-16T04:59:32.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransacCarritoController.cs",
+              "DocumentMoniker": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\Controllers\\TransacCarritoController.cs",
+              "RelativeDocumentMoniker": "ApiRestCarritoPi\\Controllers\\TransacCarritoController.cs",
+              "ToolTip": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\Controllers\\TransacCarritoController.cs",
+              "RelativeToolTip": "ApiRestCarritoPi\\Controllers\\TransacCarritoController.cs",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAwwDsBAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-16T05:15:38.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "ApiRestCarritoPi\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\proyectos\\.net\\ApiRestCarritoPi\\ApiRestCarritoPi\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "ApiRestCarritoPi\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-11-16T05:13:15.919Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
